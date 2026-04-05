@@ -58,12 +58,18 @@ The folder named "datos" will contain child folders with the following files:
     │     ├──resultados: the results from evaluation.py will be located here  
 
 #### **Deployment & Git Workflow**
-To sync this local project with the official repository, follow these commands:
-```bash
-git init
-git add .
-git commit -m "Final submission: Glassdoor Challenge"
-git branch -M main
-git remote add origin [https://github.com/jesusantonio5742/proyecto_challenge_basico.git](https://github.com/jesusantonio5742/proyecto_challenge_basico.git)
-git pull origin main --rebase
-git push -u origin main
+
+This project includes a dedicated automation script to streamline the synchronization between the local development environment and the GitHub repository.
+
+To capture all project updates—including new source code, processed datasets, and model artifacts—execute the following command in your terminal:
+
+**python upload_results.py**
+
+What this script automates:
+* **Staging:** Runs `git add .` to prepare all modified files and new artifacts.
+
+* **Commitment:** Executes `git commit` with a standardized message to maintain a clean version history.
+
+* **Deployment**: Performs a `git push origin main` to update the remote repository on GitHub.
+
+* *Note: Before running the script for the first time, ensure your local repository is correctly linked to the remote origin and that you have active GitHub credentials in your session.*
