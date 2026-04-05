@@ -1,0 +1,19 @@
+# --- Scraper Stage ---
+selenium==4.18.1
+undetected-chromedriver==3.5.5
+pandas==2.2.1
+
+# --- NLP & Preprocessing Stage ---
+langdetect==1.0.9
+spacy==3.7.4
+scikit-learn==1.4.1
+joblib==1.3.2
+
+# --- Sentiment Analysis ---
+pysentimiento==0.7.3
+vaderSentiment==3.3.2
+
+# --- MLOps & Visualization Stage ---
+mlflow==2.11.1
+matplotlib==3.8.3
+seaborn==0.13.2

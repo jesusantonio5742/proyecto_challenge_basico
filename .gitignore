@@ -1,0 +1,18 @@
+# Ignorar carpetas generadas por MLflow
+mlartifacts/
+mlflow.db
+mlruns/
+mlruns.db
+
+# Ignorar datos
+datos/raw_data/*.csv
+.DS_Store
+
+# Ignorar archivos temporales y entorno
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+venv/
+.env
+.venv/
